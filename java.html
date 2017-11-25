@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Order Form</title>
+    
+    <script type="text/javascript" src="form.js"></script>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="cakeform" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Make Your Own Car</legend>
+                <label>Type Of the Car</label>
+                <label class='radiolabel'><input type="radio"  name="type" value="sedan" onclick="calculateTotal()" />Sedan</label><br/>
+                <label class='radiolabel'><input type="radio"  name="type" value="hatch back" onclick="calculateTotal()" />hatch back</label><br/>
+                <label class='radiolabel'><input type="radio"  name="type" value="suv" onclick="calculateTotal()" />Suv</label><br/>
+                <label class='radiolabel'><input type="radio"  name="type" value="pickup Car" onclick="calculateTotal()" />Pick Up car</label><br/>
+                <label class='radiolabel'><input type="radio"  name="type" value="Off-road" onclick="calculateTotal()" />Off-road</label><br/>
+                <br/>
+                <label >Engine</label>
+                <select id="filling" name='engine' onchange="calculateTotal()">
+                <option value="None">Select Engine</option>
+                <option value="R8">R8 Engine(40L)</option>
+                <option value="M8">M8(20L)</option>
+                <option value="Prius">Prius(18L)</option>
+                <option value="Ford">Ford(25L)</option>
+               </select>
+                <br/>
+                <br/>
+                <label >Body</label>
+                <select id="filling" name='body' onchange="calculateTotal()">
+                <option value="None">Select Body</option>
+                <option value="R8">R8</option>
+                <option value="Prius">Prius</option>
+                <option value="Gallardo">Gallardo</option>
+                <option value="HighLander">HighLander</option>
+                <option value="Q7">Q7</option>
+               </select>
+                <br/>
+                 <br/>
+                <label >Tyre</label>
+                <select id="filling" name='tyre' onchange="calculateTotal()">
+                <option value="None">Select Tyre</option>
+                <option value="JK">JK</option>
+                <option value="MRF">MRF</option>
+               </select>
+                <br/>
+                <br/>
+                 <label>Seat</label>
+                <select id="filling" name='Seat' onchange="calculateTotal()">
+                <option value="None">Select Seat Type</option>
+                <option value="V2">V1</option>
+                <option value="V1">V2</option>
+               </select>
+                <br/>
+                <br/>
+                 <label>Interior</label>
+                <select id="filling" name='int' onchange="calculateTotal()">
+                <option value="None">Select Interior</option>
+                <option value="Stan">Stanley Interior</option>
+                <option value="lang">Langley</option>
+               </select>
+                <br/>
+                <br/>
+                 <label>Exhaust</label>
+                <select id="filling" name='exhaust' onchange="calculateTotal()">
+                <option value="None">Select Exhaust</option>
+                <option value="abc">abc</option>
+                <option value="hark">hark</option>
+               </select>
+                <br/>
+                 <br/>
+                <label>Gear</label>
+                <select id="filling" name='gear' onchange="calculateTotal()">
+                <option value="None">Select Gear</option>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+               </select>
+                <br/>
+                   <br/>
+                <label>Pedal</label>
+                <select id="filling" name='pedal' onchange="calculateTotal()">
+                <option value="None">Select Gear</option>
+                <option value="Sanguine">Sanguine</option>
+                <option value="Manui">Manuai</option>
+               </select>
+                <br/>
+                <br/>
+                <label>Steering Wheels</label>
+                <select id="filling" name='stear' onchange="calculateTotal()">
+                <option value="None">Select Stear</option>
+                <option value="momo">momo</option>
+                <option value="mardi">mardi</option>
+               </select>
+                <br/>
+                 <br/>
+                <label>Glass</label>
+                <select id="filling" name='Glass' onchange="calculateTotal()">
+                <option value="None">Select Glassr</option>
+                <option value="Yogamart">yogamart</option>
+                <option value="Imperial">imperial</option>
+               </select>
+                <br/>
+                 <br/>
+                <label>Lights</label>
+                <select id="filling" name='Light' onchange="calculateTotal()">
+                <option value="None">Select Light</option>
+                <option value="angel">angel</option>
+                <option value="led">light</option>
+               </select>
+                <br/>
+                 <br/>
+                <label>Lights</label>
+                <select id="filling" name='Light' onchange="calculateTotal()">
+                <option value="None">Select Light</option>
+                <option value="angel">angel</option>
+                <option value="led">light</option>
+               </select>
+                <br/>
+                <br/>
+                <label>Fuel Type</label>
+                <select id="filling" name='fuel' onchange="calculateTotal()">
+                <option value="None">Select fuel Type</option>
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+               </select>
+                <br/>
+                <br/>
+                <label>Fuel Capacity</label>
+                <select id="filling" name='fuelcap' onchange="calculateTotal()">
+                <option value="None">Select fuel Capacity</option>
+                <option value="10K">10K</option>
+                <option value="20K">20K</option>
+               </select>
+                <br/>
+                <br/>
+                <label>Fuel Capacity</label>
+                <select id="filling" name='fuelcap' onchange="calculateTotal()">
+                <option value="None">Select fuel Type</option>
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+               </select>
+                <br/>
+                <br/>
+                <label>Air Bags</label>
+                <select id="filling" name='airbags' onchange="calculateTotal()">
+                <option value="None">Select fuel Type</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+               </select>
+                <br/>
+                <br/>
+                <label>AC</label>
+                <select id="filling" name='ac' onchange="calculateTotal()">
+                <option value="None">Select AC</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+               </select>
+                <br/>
+                 <br/>
+                <label>Audio</label>
+                <select id="filling" name='audio' onchange="calculateTotal()">
+                <option value="None">Select audio Type</option>
+                <option value="Boat">boat</option>
+                <option value="Skull">skull</option>
+               </select>
+                <br/>
+                    <br/>
+                <label>Doors</label>
+                <select id="filling" name='Door' onchange="calculateTotal()">
+                <option value="None">Select Door Type</option>
+                <option value="2 door">Two Door</option>
+                <option value="4 door">Four Door</option>
+               </select>
+                <br/>
+                 <br/>
+                <label>No seats</label>
+                <select id="filling" name='seats' onchange="calculateTotal()">
+                <option value="None">Select Seat Type</option>
+                <option value="2 seater">Two Seater</option>
+                <option value="4 seater">Four Seater</option>
+               </select>
+                <br/>
+                <p>
+               
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>Contact Details</legend>
+                <label for='name'>Name</label>
+                <input type="text" id="name" name='name' />
+                <br/>
+                <label for='address'>Address</label>
+                <input type="text" id="address" name='address' />
+                <br/>
+                <label for='phonenumber'>Phone Number</label>
+                <input type="text"  id="phonenumber" name='phonenumber'/>
+                <br/>
+                </fieldset>
+            </div>
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+        </div>  
+       </form>
+	</div><!--End of wrap-->
+
+</body>
+</html>

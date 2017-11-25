@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navbar{
+  width: 100%;
+  background: #333;
+  color: white;
+}
+.navbar li{
+    color: white;
+    display : inline-block;
+    list-style: none;
+    padding: 20px;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+.navbar li:hover{
+    background: orange;
+}
+.navbar li a{
+  color: white;
+  text-decoration: none;
+}
+.logo{
+  margin-right: 820px;
+  color:white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 25px;
+}.logo:hover{
+  color:cyan;
+}
